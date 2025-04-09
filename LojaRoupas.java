@@ -15,26 +15,22 @@ public class LojaRoupas
     private int numeroCnpj, digitoCnpj;
     private float valorFaturamento, area;
     
-       public LojaRoupas(String nomeFantasia, String razaoSocial, int numeroCnpj, int digitoCnpj, float valorFatoramento, float area, String publicoAlvo) {
+    
+    // Método que permita criar uma loja informando o nome de fantasia, a razão social, o cnpj e o digito do cnpj;
+       public LojaRoupas(String nomeFantasia, String razaoSocial, int numeroCnpj, int digitoCnpj) {
         this.nomeFantasia = nomeFantasia;
         this.razaoSocial = razaoSocial;
         this.numeroCnpj = numeroCnpj;
         this.digitoCnpj = digitoCnpj;
-        this.valorFaturamento = valorFaturamento;
-        this.area = area;
-        this.publicoAlvo = publicoAlvo;
+        
     }
 
-    
-    // Método que permita criar uma loja informando o nome de fantasia, a razão social, o cnpj e o digito do cnpj;
-      public LojaRoupas(String nomeFantasia, String razaoSocial, int numeroCnpj, int digitoCnpj) {
-        this(nomeFantasia, razaoSocial, numeroCnpj, digitoCnpj, 0.0f, 0.0f, "");
-    }
-   
     //Método que permita criar uma loja informando o nome de fantasia, o cnpj e o digito do cnpj, o valor do
     //faturamento e publico alvo. Neste caso considere que a razão social é igual ao nome de fantasia
     public LojaRoupas (String nomeFantasia, int numeroCnpj, int digitoCnpj, float valorFaturamento, String publicoAlvo){
-        this(nomeFantasia,nomeFantasia, numeroCnpj, digitoCnpj, valorFaturamento,0.0f, publicoAlvo);
+        this(nomeFantasia, nomeFantasia, numeroCnpj, digitoCnpj);
+        this.valorFaturamento = valorFaturamento;
+        this.publicoAlvo = publicoAlvo;
     }
 
     //Método que permita verificar se uma loja tem faturamento superior ao de outra loja
@@ -46,7 +42,8 @@ public class LojaRoupas
     
     // Método que permita calcular o valor do aluguel de uma loja. Sabe-se que o aluguel custa R$50,00 por m2.
     float calculaAluguel (){
-        return 50 * this.getArea();
+        return 50 * this.area; //tirei o get e coloquei apenas a area 
+        //pesquisar sobre qual é o melhor colocar aquii, o get ou o set
     }
     
     //Metodos de get
