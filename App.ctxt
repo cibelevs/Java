@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=App
+comment0.text=\r\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ App\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\r\n
+comment1.params=nome\ objetivo\ tamanho\ preco
+comment1.target=App(java.lang.String,\ java.lang.String,\ int,\ float)
+comment2.params=nome\ objetivo\ tamanho
+comment2.target=App(java.lang.String,\ java.lang.String,\ int)
+comment3.params=usu
+comment3.target=void\ addUsuario(Usuario)
+comment4.params=outro
+comment4.target=boolean\ substitui(App)
+comment5.params=
+comment5.target=java.lang.String\ getObjetivo()
+comment6.params=
+comment6.target=float\ getPreco()
+comment7.params=
+comment7.target=java.lang.String\ getNome()
+comment8.params=
+comment8.target=java.util.ArrayList\ getListaUsu()
+numComments=9
